@@ -1,0 +1,13 @@
+<h1>Success</h2>
+<a href="/">Go back</a>
+
+ #foreach ($resume in $resume)
+<h1>$resume.getTitle()</h1>
+<hr>
+<h3>$resume.getCompany()</h3>
+<hr>
+<h5>From: $resume.getDate() to $resume.getEnd() </h5>
+<hr>
+<br>
+<p>$resume.getDescription()</p>
+#end
